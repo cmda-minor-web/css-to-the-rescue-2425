@@ -5,14 +5,15 @@ var shooting;
 
 var deltaxBasis = 0;
 var deltaxVariation = 3;
-var deltayBasis = 2;
-var deltayVariation = 4;
 
-var rotatieBasis = 1;
-var rotatieVariation = 6;
+var deltayBasis = 3;
+var deltayVariation = 3;
 
-var duurBasis = 5;
-var duurVariation = 3;
+var rotatieBasis = 2;
+var rotatieVariation = 4;
+
+var duurBasis = 6;
+var duurVariation = 2;
 var vuurtempo = 15;
 
 var partyPooper = false;
@@ -91,7 +92,7 @@ var bullets = emojis;
 /* de links laten luisteren en dan schieten */
 /********************************************/
 function iniLinks(){
-  let deLinksEnLabels = document.querySelectorAll('a, input[type="checkbox"], label, summary');
+  const deLinksEnLabels = document.querySelectorAll('a, input[type="checkbox"], label, summary');
   
 	function shoot() {
     if(!partyPooper && window.matchMedia('(prefers-reduced-motion: no-preference)').matches) {
@@ -134,7 +135,7 @@ function iniLinks(){
         bullet.style.setProperty("--posy", (mousey - scrolly));
 
         //verwijder bullet na animatie (uit beeld)
-        bullet.addEventListener("animationend", () => {event.target.remove();}, {once: true});
+        bullet.addEventListener("animationend", event => {event.target.remove();}, {once: true});
 
         //voeg bullet toe
         document.body.prepend(bullet);
@@ -160,7 +161,7 @@ function iniLinks(){
       function updatePositieMuis(event) {
 				mousex = event.pageX;
         mousey = event.pageY;
-        scrolly = document.body.scrollTop;
+        scrolly = document.documentElement.scrollTop;
 			}
 			
 			eenLinkOfLabel.addEventListener("mouseover", (event) => {
@@ -188,7 +189,7 @@ function iniLinks(){
   }
 
 
-  ruimBulletsOp();
+  // ruimBulletsOp();
 	activeerLinks();
 }
 
@@ -201,7 +202,7 @@ function iniPartyPooper() {
   function changePartyPooper(e) {    
     partyPooper = !partyPooper;
     localStorage.setItem("partyPooper", JSON.stringify(partyPooper));
-    document.body.classList.toggle("party-pooper");
+    document.documentElement.classList.toggle("party-pooper");
   }
 
   var partyPooperCheck = document.querySelector("header input");
@@ -209,7 +210,7 @@ function iniPartyPooper() {
     partyPooper = JSON.parse(localStorage.getItem("partyPooper"));
     partyPooperCheck.checked = partyPooper;
     if(partyPooper) {
-      document.body.classList.add("party-pooper");
+      document.documentElement.classList.add("party-pooper");
     }
   }
   partyPooperCheck.addEventListener("change", changePartyPooper);
@@ -230,10 +231,10 @@ function iniOffCanvas(){
 
   function observerFnHeader1(entries) {
     if(entries[0].isIntersecting) {
-      document.body.classList.remove("header-reverse");
+      document.documentElement.classList.remove("header-reverse");
     }
     else {
-      document.body.classList.add("header-reverse");
+      document.documentElement.classList.add("header-reverse");
     }
   }
 

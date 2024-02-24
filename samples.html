@@ -10,32 +10,38 @@
 
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Saira:wght@100;400;600;700&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Open+Sans&family=Saira:wght@100;400;600;700&display=swap" rel="stylesheet">
 
   <link rel="stylesheet" href="styles/styles.css">
   <link rel="icon" type="image/svg+xml" href="img/favicon.svg">
 </head>
 
 <body>
-  <div class="helaas-een-wrapper">
-    <header>
-      <a href="index.html">CSS to the Rescue&nbsp;<span>23/</span>24</a>
 
-      <form>
-        <input type="checkbox" name="party-pooper" id="party-pooper">
-        <label for="party-pooper">party pooper <span>mode</span></label>
-      </form>
+  <header>
+    <a href="index.html">CSS to the Rescue&nbsp;<span><span>23/</span></span>24</a>
+
+    <form>
+      <label>
+        <input type="checkbox" name="party-pooper"> 
+        <span>party pooper <span>mode</span></span>
+      </label>
+    </form>
+  </header>
+
+  <main>
+    <header>
+      <h1>Code samples and pointers for the final assignment</h1>
     </header>
 
-    <main>
-      <h1>Code samples and pointers for the final assignment</h1>
+    <!-- :has() -->
+    <details id="sessie-has">
+      <summary aria-label="meer over :has()"><h2>:has()</h2>
+        <p>De <strong>parent selector</strong> en zo veel meer. Zo <strong>nieuw</strong> dat de totale kracht nog niet ontbolsterd is - maar nu al zo mooi.</p>
+      </summary>
 
+      <div class="details-content">
 
-      <!-- :has() -->
-      <details id="sessie-has">
-        <summary aria-label="meer over :has()"><h2>:has()</h2>
-          <p>De <strong>parent selector</strong> en zo veel meer. Zo <strong>nieuw</strong> dat de totale kracht nog niet ontbolsterd is - maar nu al zo mooi.</p>
-        </summary>
         <h3>Oefenen</h3>
         <ul>
           <li>
@@ -96,13 +102,17 @@
         <h3>Schetsen</h3>
         <p>Ik maak veel schetsjes - om te ontwerpen - en om techniek uit te vogelen:</p>
         <p><img src="img/schets-worst-mes-pan.jpg" alt="worst, mes en pan in wording"></p>
-      </details>
 
-      <!--Filters & Masks-->
-      <details id="sessie-filters-and-masks">
-        <summary aria-label="meer over filters & masks"><h2>Filters & Masks</h2>
-          <p><strong>Visuele effecten</strong> toevoegen aan elementen. De effecten zijn ook goed te <strong>combineren</strong>. Nb. <strong>Wel zwaar</strong> voor je computer :-(</p>
-        </summary>
+      </div>
+    </details>
+
+    <!--Filters & Masks-->
+    <details id="sessie-filters-and-masks">
+      <summary aria-label="meer over filters & masks"><h2>Filters & Masks</h2>
+        <p><strong>Visuele effecten</strong> toevoegen aan elementen. De effecten zijn ook goed te <strong>combineren</strong>. Nb. <strong>Wel zwaar</strong> voor je computer :-(</p>
+      </summary>
+
+      <div class="details-content">
 
         <h3>Oefenen</h3>
         <ul>
@@ -160,14 +170,20 @@
         <h3>Schetsen</h3>
         <p>Ik maak veel schetsjes - om te ontwerpen - en om techniek uit te vogelen:</p>
         <p><img src="img/schets-worst-mes-pan.jpg" alt="worst, mes en pan in wording"></p>
-      </details>
+
+      </div>
+    </details>
 
 
-      
-      <!--Gradients-->
-      <details id="sessie-gradients">
-        <summary aria-label="meer over Gradients"><h2>Gradients</h2>
-          <p>De 6 gradients: <strong>linear</strong>, <strong>repeating-linear</strong>, <strong>radial</strong>, <strong>repeating-radial</strong>, <strong>conic</strong>, <strong>repeating-conic</strong> en dan <strong>combineren</strong> maar.</p></summary>
+    
+    <!--Gradients-->
+    <details id="sessie-gradients">
+      <summary aria-label="meer over Gradients"><h2>Gradients</h2>
+        <p>De 6 gradients: <strong>linear</strong>, <strong>repeating-linear</strong>, <strong>radial</strong>, <strong>repeating-radial</strong>, <strong>conic</strong>, <strong>repeating-conic</strong> en dan <strong>combineren</strong> maar.</p>
+      </summary>
+
+      <div class="details-content">
+
         <h3>Oefenen</h3>
         <ul>
           <li>Meetypen: <a href="https://codepen.io/shooft/pen/RwogNqx">De 6 gradients</a> (CodePen)</li>
@@ -198,7 +214,7 @@
           <li><a href="https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_Backgrounds_and_Borders/Resizing_background_images">Sizing background images with background-size</a> (MDN)</li>
           <li><a href="https://projects.verou.me/css3patterns/">Lea's pattern gallery</a> (Lea Verou)</li>
           <li><a href="https://css-houdini.rocks/animating-gradient/">Animating a gradient
-met Houdini</a> (CSS Houdini)</li>
+  met Houdini</a> (CSS Houdini)</li>
         </ul>
 
         <ul>
@@ -208,13 +224,19 @@ met Houdini</a> (CSS Houdini)</li>
         <h3>Schetsen</h3>
         <p>Ik maak veel schetsjes - om te ontwerpen - en om techniek uit te vogelen:</p>
         <p><img src="img/schets-worst-mes-pan.jpg" alt="worst, mes en pan in wording"></p>
-      </details>
-      
-      
-      <!--SVG FILTERS-->
-      <details id="sessie-svgfilters">
-        <summary aria-label="meer over SVG filters"><h2>SVG filters</h2>
-          <p>Van <strong>CSS</strong> filters <strong>als shortcuts</strong> tot SMIL in een van de <strong>17 FE's</strong> (filter effects).</p></summary>
+
+      </div>
+    </details>
+    
+    
+    <!--SVG FILTERS-->
+    <details id="sessie-svgfilters">
+      <summary aria-label="meer over SVG filters"><h2>SVG filters</h2>
+        <p>Van <strong>CSS</strong> filters <strong>als shortcuts</strong> tot SMIL in een van de <strong>17 FE's</strong> (filter effects).</p>
+      </summary>
+
+      <div class="details-content">
+
         <h3>Oefenen</h3>
         <ul>
           <li>Meetypen: <a href="https://codepen.io/shooft/pen/LYbyrQB">SVG filter basics</a> (CodePen)</li>
@@ -268,13 +290,19 @@ met Houdini</a> (CSS Houdini)</li>
         <h3>Schetsen</h3>
         <p>Ik maak veel schetsjes - om te ontwerpen - en om techniek uit te vogelen:</p>
         <p><img src="img/schets-worst-mes-pan.jpg" alt="worst, mes en pan in wording"></p>
-      </details>
+        
+      </div>
+    </details>
 
 
-      <!--Custom properties-->
-      <details id="sessie-customproperties">
-        <summary aria-label="meer over Custom properties"><h2>Custom properties</h2>
-          <p>Van <strong>themes</strong> via (complexe) <strong>berekeningen</strong> en <strong>logica</strong> richting <strong>Houdini</strong>.</p></summary>
+    <!--Custom properties-->
+    <details id="sessie-customproperties">
+      <summary aria-label="meer over Custom properties"><h2>Custom properties</h2>
+        <p>Van <strong>themes</strong> via (complexe) <strong>berekeningen</strong> en <strong>logica</strong> richting <strong>Houdini</strong>.</p>
+      </summary>
+
+      <div class="details-content">
+
         <h3>Oefenen</h3>
         <ul>
           <li>Meetypen: <a href="https://codepen.io/shooft/pen/eYBWzLx">Button states</a> (CodePen)</li>
@@ -324,12 +352,18 @@ met Houdini</a> (CSS Houdini)</li>
         <h3>Schetsen</h3>
         <p>Ik maak veel schetsjes - om te ontwerpen - en om techniek uit te vogelen:</p>
         <p><img src="img/schets-worst-mes-pan.jpg" alt="worst, mes en pan in wording"></p>
-      </details>
 
-      <!--VORMPJES MAKEN-->
-      <details id="sessie-vormpjesmaken">
-        <summary aria-label="meer over vormpjes maken"><h2>Vormpjes maken</h2>
-          <p><strong>Border-radius</strong>, <strong>gradients</strong>, <strong>before & after</strong> en <strong>clip-path</strong> en die dan slim <strong>combineren</strong>.</p></summary>
+      </div>
+    </details>
+
+    <!--VORMPJES MAKEN-->
+    <details id="sessie-vormpjesmaken">
+      <summary aria-label="meer over vormpjes maken"><h2>Vormpjes maken</h2>
+        <p><strong>Border-radius</strong>, <strong>gradients</strong>, <strong>before & after</strong> en <strong>clip-path</strong> en die dan slim <strong>combineren</strong>.</p>
+      </summary>
+
+      <div class="details-content">
+
         <h3>Oefenen</h3>
         <ul>
           <li>Meetypen: <a href="https://codepen.io/shooft/pen/zYoKGMY">Border-radius heeft 8 values</a> (CodePen)</li>
@@ -381,14 +415,19 @@ met Houdini</a> (CSS Houdini)</li>
         <h3>Schetsen</h3>
         <p>Ik maak veel schetsjes - om te ontwerpen - en om techniek uit te vogelen:</p>
         <p><img src="img/schets-worst-mes-pan.jpg" alt="worst, mes en pan in wording"></p>
-      </details>
-      
-      <!--3D TRANSFORMS-->
-      <details id="sessie-3dtransforms">
-        <summary aria-label="meer over 3D transforms">
-          <h2>(3D) Transforms</h2>
-          <p><strong>Translate</strong>, <strong>rotate</strong>, <strong>origin</strong>, <strong>perspective</strong> en <strong>backface</strong> en die dan slim <strong>combineren</strong>.</p>
-        </summary>
+
+      </div>
+    </details>
+    
+    <!--3D TRANSFORMS-->
+    <details id="sessie-3dtransforms">
+      <summary aria-label="meer over 3D transforms">
+        <h2>(3D) Transforms</h2>
+        <p><strong>Translate</strong>, <strong>rotate</strong>, <strong>origin</strong>, <strong>perspective</strong> en <strong>backface</strong> en die dan slim <strong>combineren</strong>.</p>
+      </summary>
+
+      <div class="details-content">
+
         <h3>Oefenen</h3>
         <ul>
           <li>Startpunt: <a href="https://codepen.io/shooft/pen/eYBdOBx">De 4 transform functies</a> (Codepen)</li>
@@ -427,14 +466,18 @@ met Houdini</a> (CSS Houdini)</li>
         <h3>Schetsen</h3>
         <p>Ik maak veel schetsjes - om te ontwerpen - en om techniek uit te vogelen:</p>
         <p><img src="img/schets-worst-mes-pan.jpg" alt="worst, mes en pan in wording"></p>
-    </details>
+        
+      </div>
+  </details>
 
-    <!--ANIMEREN-->
-    <details id="sessie-animeren">
-      <summary aria-label="meer over animeren">
-        <h2>Animeren</h2>
-        <p>Van eenvoudige from-to <strong>keyframes</strong> tot complexe meervoudige cubic-beziers.</p>
-      </summary>
+  <!--ANIMEREN-->
+  <details id="sessie-animeren">
+    <summary aria-label="meer over animeren">
+      <h2>Animeren</h2>
+      <p>Van eenvoudige from-to <strong>keyframes</strong> tot complexe meervoudige cubic-beziers.</p>
+    </summary>
+
+    <div class="details-content">
 
       <h3>Redenen om te animeren (<a href="https://valhead.com/">Val Head</a>):</h3>
       <ul>
@@ -477,15 +520,19 @@ met Houdini</a> (CSS Houdini)</li>
       <h3>Schetsen</h3>
       <p>Ik maak veel schetsjes - om te ontwerpen - en om techniek uit te vogelen:</p>
       <p><img src="img/schets-worst-mes-pan.jpg" alt="worst, mes en pan in wording"></p>
-    </details>
+      
+    </div>
+  </details>
 
 
-    <!--Cursor volgen-->
-    <details id="sessie-cursor-volgen">
-      <summary aria-label="meer over cursor volgen">
-        <h2>Cursor volgen</h2>
-        <p>De <strong>cursor volgen</strong> met <strong>custom properties</strong> en een <strong>beetje JS</strong>. Dank aan <a href="https://lea.verou.me/">Lea</a></p>
-      </summary>
+  <!--Cursor volgen-->
+  <details id="sessie-cursor-volgen">
+    <summary aria-label="meer over cursor volgen">
+      <h2>Cursor volgen</h2>
+      <p>De <strong>cursor volgen</strong> met <strong>custom properties</strong> en een <strong>beetje JS</strong>. Dank aan <a href="https://lea.verou.me/">Lea</a></p>
+    </summary>
+
+    <div class="details-content">
 
       <h3>Oefenen</h3>
       <ul>
@@ -532,20 +579,20 @@ met Houdini</a> (CSS Houdini)</li>
       <h3>Schetsen</h3>
       <p>Ik maak veel schetsjes - om te ontwerpen - en om techniek uit te vogelen:</p>
       <p><img src="img/schets-worst-mes-pan.jpg" alt="worst, mes en pan in wording"></p>
-    </details>
+
+    </div>
+  </details>
 
 
-    </main>
+  </main>
 
-    <footer>
-      <ul>
-        <!-- <li><a href="index.html" class="home">CSSttR 23/24</a></li> -->
-        <li><a href="https://teams.microsoft.com/l/channel/19%3A55031fd9d2844cc193a600ed26ef4052%40thread.tacv2/2%20CSS%20-%20CSS%20to%20the%20Rescue?groupId=90efb8b2-557d-4a2b-9ad3-649a84dc607d&tenantId=0907bb1e-21fc-476f-8843-02d09ceb59a7" class="classroom" target="_blank" rel="noopener noreferrer">Teams</a></li>
-        <li><a href="https://dlo.mijnhva.nl/d2l/le/content/571327/Home" class="uploadbox" target="_blank" rel="noopener noreferrer">DLO</a></li>
-      </ul>
-    </footer>
-
-  </div>
+  <footer>
+    <ul>
+      <li><a data-icon="🐡" href="index.html" class="home">Home</a></li>
+      <li><a data-icon="👺" href="https://teams.microsoft.com/l/channel/19%3A55031fd9d2844cc193a600ed26ef4052%40thread.tacv2/2%20CSS%20-%20CSS%20to%20the%20Rescue?groupId=90efb8b2-557d-4a2b-9ad3-649a84dc607d&tenantId=0907bb1e-21fc-476f-8843-02d09ceb59a7" class="classroom" target="_blank" rel="noopener noreferrer">Teams</a></li>
+      <li><a data-icon="🥦" href="https://dlo.mijnhva.nl/d2l/le/content/571327/Home" class="uploadbox" target="_blank" rel="noopener noreferrer">DLO</a></li>
+    </ul>
+  </footer>
   
   <script src="scripts/script.js"></script>
 </body>

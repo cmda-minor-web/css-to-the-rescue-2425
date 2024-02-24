@@ -10,33 +10,38 @@
 
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Saira:wght@100;400;600;700&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Open+Sans&family=Saira:wght@100;400;600;700&display=swap" rel="stylesheet">
 
   <link rel="stylesheet" href="styles/styles.css">
   <link rel="icon" type="image/svg+xml" href="img/favicon.svg">
 </head>
 
 <body>
-  <div class="helaas-een-wrapper">
-    <header>
-      <a href="index.html">CSS to the Rescue&nbsp;<span>23/</span>24</a>
 
-      <form>
-        <input type="checkbox" name="party-pooper" id="party-pooper">
-        <label for="party-pooper">party pooper <span>mode</span></label>
-      </form>
+  <header>
+    <a href="index.html">CSS to the Rescue&nbsp;<span><span>23/</span></span>24</a>
+
+    <form>
+      <label>
+        <input type="checkbox" name="party-pooper"> 
+        <span>party pooper <span>mode</span></span>
+      </label>
+    </form>
+  </header>
+
+  <main>
+    <header>
+      <h1>The themes for the introductory exercise</h1>
+      <p>work in progress</p>
     </header>
 
-    <main>
-      <h1>The themes for the introductory exercise</h1>
+    <details id="thema-context">
+      <summary>
+        <h2>Thema: Context</h2>
+        <p class="teams">Teams: <span>🧙<span>+</span>🎁</span> en <span>🦸<span>+</span>🎁</span></p>
+      </summary>
 
-      <p>work in progress</p>
-
-      <details id="thema-context">
-        <summary>
-          <h2>Thema: Context</h2>
-          <p class="teams">Teams: <span>🧙<span>+</span>🎁</span> en <span>🦸<span>+</span>🎁</span></p>
-        </summary>
+      <div class="details-content">
 
         <p>Een lijstje links om je experiment te starten:</p>
         
@@ -59,16 +64,20 @@
         <ul>
           <li>uitdaging: Ahmad Shadeed geeft een intro over <a href="https://ishadeed.com/article/css-container-style-queries/#introducing-style-queries">CSS Style Queries</a> (achter een vlag🚩 in Chrome).</li>
         </ul>
+        
+      </div>
+    </details>
 
-      </details>
 
 
+    <details id="thema-kleur">
+      <summary>
+        <h2>Thema: Kleur</h2>
+        <p class="teams">Teams: <span>🧙<span>+</span>&#x2697;&#xfe0f;</span> en <span>🦸<span>+</span>&#x2697;&#xfe0f;</span></p>
+      </summary>
 
-      <details id="thema-kleur">
-        <summary>
-          <h2>Thema: Kleur</h2>
-          <p class="teams">Teams: <span>🧙<span>+</span>&#x2697;&#xfe0f;</span> en <span>🦸<span>+</span>&#x2697;&#xfe0f;</span></p>
-        </summary>
+      <div class="details-content">
+
         <p>Een lijstje links om je experiment te starten:</p>
 
         <ul>
@@ -104,15 +113,19 @@
         <ul>
           <li>Uitdaging: <a href="https://css-tricks.com/the-state-of-changing-gradients-with-css-transitions-and-animations/">Gradients animeren met Houdini</a>.</li>
         </ul>
-      </details>
+
+      </div>
+    </details>
 
 
 
-      <details id="thema-animeren">
-        <summary>
-          <h2>Thema: Animeren (en transformeren)</h2>
-          <p class="teams">Teams: <span>🧙<span>+</span>🎠</span> en <span>🦸<span>+</span>🎠</span></p>
-        </summary>
+    <details id="thema-animeren">
+      <summary>
+        <h2>Thema: Animeren (en transformeren)</h2>
+        <p class="teams">Teams: <span>🧙<span>+</span>🎠</span> en <span>🦸<span>+</span>🎠</span></p>
+      </summary>
+
+      <div class="details-content">
         <p>Een lijstje links om je experiment te starten:</p>
 
         <ul>
@@ -137,15 +150,19 @@
           <li>Uitdaging: <a href="https://css-tricks.com/the-state-of-changing-gradients-with-css-transitions-and-animations/">Gradients animeren met Houdini</a>.</li>
           <li>Uitdaging: 3D animeren.</li>
         </ul>
-      </details>
+        
+      </div>
+    </details>
 
 
 
-      <details id="thema-layout">
-        <summary>
-          <h2>Thema: Layout</h2>
-          <p class="teams">Teams: <span>🧙<span>+</span>🍱</span> en <span>🦸<span>+</span>🍱</span></p>
-        </summary>
+    <details id="thema-layout">
+      <summary>
+        <h2>Thema: Layout</h2>
+        <p class="teams">Teams: <span>🧙<span>+</span>🍱</span> en <span>🦸<span>+</span>🍱</span></p>
+      </summary>
+
+      <div class="details-content">
 
         <p>Een lijstje links om je experiment te starten:</p>
         
@@ -170,17 +187,22 @@
         <ul>
           <li>Uitdaging: <a href="https://www.bram.us/2021/02/23/the-future-of-css-scroll-linked-animations-part-1/">Scroll-based animaties met @scroll-timeline</a> → supertof (helaas nog wel achter een vlag 🚩).</li>
         </ul>
-      </details>
+        
+      </div>
+    </details>
 
 
 
-      <details id="thema-has">
-        <summary>
-          <h2>Thema: :has() & andere selectors</h2>
-          <p class="teams">Teams: <span>🧙<span>+</span>🦄</span> en <span>🦸<span>+</span>🦄</span></p>
-        </summary>
+    <details id="thema-has">
+      <summary>
+        <h2>Thema: :has() & andere selectors</h2>
+        <p class="teams">Teams: <span>🧙<span>+</span>🦄</span> en <span>🦸<span>+</span>🦄</span></p>
+      </summary>
+
+      <div class="details-content">
 
         <p>Een lijstje links om je experiment te starten:</p>
+
         <ul>
           <li><a href="https://www.matuzo.at/blog/2022/100daysof-day6/">:has() intro</a> van Manuel Matuzović</li>
           <li><a href="https://webkit.org/blog/13096/css-has-pseudo-class/">:has() longer read</a> van Jen Simmons</li>
@@ -216,62 +238,67 @@
           <li>Uitdaging: CSS Cascade Layers - <a href="https://thecsspodcast.libsyn.com/058-cascade-layers">intro video</a> en een <a href="https://www.smashingmagazine.com/2022/01/introduction-css-cascade-layers/">TLTR ;-)</a>.</li>
         </ul>
 
-      </details>
+      </div>
+
+    </details>
 
 
 
-      <!-- <details id="thema-effecten">
-        <summary>
-          <h2>Thema: Effecten</h2>
-          <p class="teams">Teams: <span>🧙<span>+</span>🎊</span> en <span>🦸<span>+</span>🎊</span></p>
-        </summary>
-        <p>Een lijstje links om je experiment te starten:</p>
-        
-        <ul>
-          <li>Text-decoration-<a href="https://developer.mozilla.org/en-US/docs/Web/CSS/text-decoration-line">line</a>, -<a href="https://developer.mozilla.org/en-US/docs/Web/CSS/text-decoration-color">color</a>, -<a href="https://developer.mozilla.org/en-US/docs/Web/CSS/text-decoration-style">style</a>, -<a href="https://developer.mozilla.org/en-US/docs/Web/CSS/text-decoration-thickness">thickness</a> en -<a href="https://developer.mozilla.org/en-US/docs/Web/CSS/text-decoration-skip-ink">skip-ink</a> en text-underline-<a href="https://developer.mozilla.org/en-US/docs/Web/CSS/text-underline-offset">offset</a> en -<a href="https://developer.mozilla.org/en-US/docs/Web/CSS/text-underline-position">position</a>.</li>
-        </ul>
+    <!-- <details id="thema-effecten">
+      <summary>
+        <h2>Thema: Effecten</h2>
+        <p class="teams">Teams: <span>🧙<span>+</span>🎊</span> en <span>🦸<span>+</span>🎊</span></p>
+      </summary>
 
-        <ul>
-          <li>(Mulitple) gradients (linear, radial, conic en repeating) → <a href="https://www.matuzo.at/blog/2022/100daysof-day21/">de basics van conic gradients</a>, <a href="https://css-tricks.com/css3-gradients/">alle basics</a>, <a href="https://projects.verou.me/css3patterns/">Lea's gallery</a> en  <a href="https://css-pattern.com/">Temani Afif's gallery</a>.</li>
-          <li><a href="https://css-tricks.com/almanac/properties/b/box-shadow/">(Multiple) box shadows</a> (ook goed te animeren :).</li>
-        </ul> 
-        
-        <ul>
-          <li>Introductie van de <a href="https://www.matuzo.at/blog/2023/100daysof-day87/">mask properties</a>.</li>
-          <li>Clip-path en Mask → <a href="https://css-tricks.com/clipping-masking-css/">samples by Chris Coyier</a>.</li>
+      <div class="details-content">
 
-          <li>Blend-mode → <a href="https://css-tricks.com/basics-css-blend-modes/">de basics</a> en <a href="https://css-tricks.com/chaining-multiple-blend-modes/">ze zijn te chainen</a>.</li>
-          <li>
-            Filters:
-            <ul>
-              <li>De basis: <a href="https://css-tricks.com/almanac/properties/f/filter/">CSS-filters</a>.</li>
-              <li>Het grote broertje: <a href="https://tympanus.net/codrops/2019/01/15/svg-filters-101/">SVG-filters</a></li>
-              <li><a href="https://css-tricks.com/almanac/properties/b/backdrop-filter/">Backdrop-filter</a> → als uitdaging: <a href="https://codepen.io/thebabydino/pen/qvYZzQ?editors=1100">combineren met mask</a>.</li>
-            </ul>
-          </li>
-          <li><a href="">CSS Tie-Dye Gradient Backgrounds</a> → met blend-modes.</li>
-          <li><a href="https://css-tricks.com/gooey-effect/">Gooey blobs</a> → met een SVG filter.</li>
-          <li><a href="https://css-irl.info/css-halftone-patterns/">CSS Halftone Patterns</a> → met alle opties aan.</li>
-        </ul>  
-          
-        <ul>
-          <li>Uitdaging: <a href="https://css-tricks.com/the-state-of-changing-gradients-with-css-transitions-and-animations/">Gradients animeren met Houdini</a>.</li>
-          <li>Uitdaging: <a href="https://css-tricks.com/mask-compositing-the-crash-course/">Mask compositing: the crash course</a> (a la Ana Tudor).</li>
-        </ul>
-
-      </details> -->
-
-    </main>
-
-    <footer>
+      <p>Een lijstje links om je experiment te starten:</p>
+      
       <ul>
-        <!-- <li><a href="index.html" class="home">CSSttR 23/24</a></li> -->
-        <li><a href="https://teams.microsoft.com/l/channel/19%3A55031fd9d2844cc193a600ed26ef4052%40thread.tacv2/2%20CSS%20-%20CSS%20to%20the%20Rescue?groupId=90efb8b2-557d-4a2b-9ad3-649a84dc607d&tenantId=0907bb1e-21fc-476f-8843-02d09ceb59a7" class="classroom" target="_blank" rel="noopener noreferrer">Teams</a></li>
-        <li><a href="https://dlo.mijnhva.nl/d2l/le/content/571327/Home" class="uploadbox" target="_blank" rel="noopener noreferrer">DLO</a></li>
+        <li>Text-decoration-<a href="https://developer.mozilla.org/en-US/docs/Web/CSS/text-decoration-line">line</a>, -<a href="https://developer.mozilla.org/en-US/docs/Web/CSS/text-decoration-color">color</a>, -<a href="https://developer.mozilla.org/en-US/docs/Web/CSS/text-decoration-style">style</a>, -<a href="https://developer.mozilla.org/en-US/docs/Web/CSS/text-decoration-thickness">thickness</a> en -<a href="https://developer.mozilla.org/en-US/docs/Web/CSS/text-decoration-skip-ink">skip-ink</a> en text-underline-<a href="https://developer.mozilla.org/en-US/docs/Web/CSS/text-underline-offset">offset</a> en -<a href="https://developer.mozilla.org/en-US/docs/Web/CSS/text-underline-position">position</a>.</li>
       </ul>
-    </footer>
-    
-  </div>
+
+      <ul>
+        <li>(Mulitple) gradients (linear, radial, conic en repeating) → <a href="https://www.matuzo.at/blog/2022/100daysof-day21/">de basics van conic gradients</a>, <a href="https://css-tricks.com/css3-gradients/">alle basics</a>, <a href="https://projects.verou.me/css3patterns/">Lea's gallery</a> en  <a href="https://css-pattern.com/">Temani Afif's gallery</a>.</li>
+        <li><a href="https://css-tricks.com/almanac/properties/b/box-shadow/">(Multiple) box shadows</a> (ook goed te animeren :).</li>
+      </ul> 
+      
+      <ul>
+        <li>Introductie van de <a href="https://www.matuzo.at/blog/2023/100daysof-day87/">mask properties</a>.</li>
+        <li>Clip-path en Mask → <a href="https://css-tricks.com/clipping-masking-css/">samples by Chris Coyier</a>.</li>
+
+        <li>Blend-mode → <a href="https://css-tricks.com/basics-css-blend-modes/">de basics</a> en <a href="https://css-tricks.com/chaining-multiple-blend-modes/">ze zijn te chainen</a>.</li>
+        <li>
+          Filters:
+          <ul>
+            <li>De basis: <a href="https://css-tricks.com/almanac/properties/f/filter/">CSS-filters</a>.</li>
+            <li>Het grote broertje: <a href="https://tympanus.net/codrops/2019/01/15/svg-filters-101/">SVG-filters</a></li>
+            <li><a href="https://css-tricks.com/almanac/properties/b/backdrop-filter/">Backdrop-filter</a> → als uitdaging: <a href="https://codepen.io/thebabydino/pen/qvYZzQ?editors=1100">combineren met mask</a>.</li>
+          </ul>
+        </li>
+        <li><a href="">CSS Tie-Dye Gradient Backgrounds</a> → met blend-modes.</li>
+        <li><a href="https://css-tricks.com/gooey-effect/">Gooey blobs</a> → met een SVG filter.</li>
+        <li><a href="https://css-irl.info/css-halftone-patterns/">CSS Halftone Patterns</a> → met alle opties aan.</li>
+      </ul>  
+        
+      <ul>
+        <li>Uitdaging: <a href="https://css-tricks.com/the-state-of-changing-gradients-with-css-transitions-and-animations/">Gradients animeren met Houdini</a>.</li>
+        <li>Uitdaging: <a href="https://css-tricks.com/mask-compositing-the-crash-course/">Mask compositing: the crash course</a> (a la Ana Tudor).</li>
+      </ul>
+
+      </div>
+
+    </details> -->
+
+  </main>
+
+  <footer>
+    <ul>
+      <li><a data-icon="🐡" href="index.html" class="home">Home</a></li>
+      <li><a data-icon="👺" href="https://teams.microsoft.com/l/channel/19%3A55031fd9d2844cc193a600ed26ef4052%40thread.tacv2/2%20CSS%20-%20CSS%20to%20the%20Rescue?groupId=90efb8b2-557d-4a2b-9ad3-649a84dc607d&tenantId=0907bb1e-21fc-476f-8843-02d09ceb59a7" class="classroom" target="_blank" rel="noopener noreferrer">Teams</a></li>
+      <li><a data-icon="🥦" href="https://dlo.mijnhva.nl/d2l/le/content/571327/Home" class="uploadbox" target="_blank" rel="noopener noreferrer">DLO</a></li>
+    </ul>
+  </footer>
   
   <script defer src="scripts/script.js"></script>
 </body>
