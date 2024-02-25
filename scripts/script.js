@@ -6,14 +6,14 @@ var shooting;
 var deltaxBasis = 0;
 var deltaxVariation = 3;
 
-var deltayBasis = 3;
-var deltayVariation = 3;
+var deltayBasis = 4;
+var deltayVariation = 2;
 
-var rotatieBasis = 2;
-var rotatieVariation = 4;
+var rotatieBasis = 1;
+var rotatieVariation = 6;
 
-var duurBasis = 6;
-var duurVariation = 2;
+var duurBasis = 5;
+var duurVariation = 3;
 var vuurtempo = 15;
 
 var partyPooper = false;
