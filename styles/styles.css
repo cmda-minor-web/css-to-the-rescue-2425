@@ -528,6 +528,8 @@ details[open] summary {
   width:auto;
 }
 
+
+
 summary * {
   grid-column-start:2;
 }
@@ -550,8 +552,10 @@ summary::after {
   aspect-ratio: 1;
   justify-self:start;
   align-self:center;
+  position:relative;
+  display:block;
   
-  translate:-50% 0;
+  translate:calc(-50% + .5px) 0;
 }
 
 summary::before {
@@ -574,7 +578,9 @@ summary::after {
 
 @media (prefers-reduced-motion:no-preference) {
   summary::before {
-    transition:scale .5s, rotate .4s .2s;
+    transition:
+      scale .5s, 
+      rotate .4s .2s;
   }
 
   summary::after {
