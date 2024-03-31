@@ -16,8 +16,11 @@
 /*********************/
 
 :root {
-  --hoofdKleur:#2f3337;
-  --achtergrondKleur:#c9cfcc;
+  /* --hoofdKleur:#2f3337; */
+  /* --achtergrondKleur:#c9cfcc; */
+
+  --hoofdKleur:#333;
+  --achtergrondKleur:#ccc;
   
   --achtergrondHighlightKleur:color-mix(in srgb, var(--achtergrondKleur), white 80%);
 
@@ -45,16 +48,23 @@
 }
 
 :root.header-reverse {
-  --hoofdKleurHeader:#c9cfcc;
-  --achtergrondKleurHeader: #2f3337cc;
+  /* --hoofdKleurHeader:#c9cfcc; */
+  /* --achtergrondKleurHeader: #2f3337cc; */
+
+  --hoofdKleurHeader:#ccc;
+  --achtergrondKleurHeader: #333c;
+
   --accentKleurHeader: #ffee99;
   --linkKleurHeader:var(--accentKleurHeader);
 }
 
 @media (prefers-color-scheme:dark) {
   :root {
+    /* --hoofdKleur:#c9cfcc; */
+    /* --achtergrondKleur:#2f3337; */
+
     --hoofdKleur:#c9cfcc;
-    --achtergrondKleur:#2f3337;
+    --achtergrondKleur:#333;
 
     --achtergrondHighlightKleur:color-mix(in srgb, var(--achtergrondKleur), black 33%);
 
@@ -62,8 +72,11 @@
   }
 
   :root.header-reverse {
-    --hoofdKleurHeader:#c9cfcc;
-    --achtergrondKleurHeader: #2f3337cc;
+    /* --hoofdKleurHeader:#c9cfcc; */
+    /* --achtergrondKleurHeader: #2f3337cc; */
+
+    --hoofdKleurHeader:#ccc;
+    --achtergrondKleurHeader: #333c;
     --accentKleurHeader:var(--linkKleur);
   }
 }
