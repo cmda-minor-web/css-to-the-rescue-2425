@@ -18,17 +18,27 @@
 
 @layer default {
 	body {
+		height:100dvh;
+		margin:0;
+		
 		display:grid;
+		place-content:center;
+		place-items:center;
 	}
 	
 	h1 {
 		line-height:1.2;
 		max-width:15ch;
+		text-align:center;
 	}
 	
 	label {
 		display:inline-flex;
 		align-items:center;
+	}
+
+	* {
+		accent-color:black;
 	}
 }
 
